@@ -1,10 +1,16 @@
-#ifndef  ignaslib
+#ifndef ignaslib
 #define ignaslib
 
-int xdgit(int x, int y)
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
 
-double fractionary_exponent(double base, double valor)
+bool isint(double);
+int xdigit(int, int);
 
-bool isint(double x);
+void randvec(int, int, double);
 
 #endif
