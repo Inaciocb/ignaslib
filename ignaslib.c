@@ -1,11 +1,11 @@
 #include  "ignaslib.h"
 
-bool isInt (double x)
+bool isint (double x)
 
-bool verificaInteiro(double x)
+bool isint(double x)
 {
-    int truncado = (int)x;
-    return (x == truncado);
+    int trunked = (int)x;
+  return (x == trunked);
 }
 
 double xnay(double x, double y)
@@ -32,13 +32,13 @@ bool isint();
   return result;
 }
 
-int digito_x(int x, int y)
+int xdigit(int x, int y)
 {
-    int digitoX = (int)fmod((x/(xnay(10, y))), 10);
-    return digitoX;
+    int digit = (int)fmod((x/(xnay(10, y))), 10);
+  return digit;
 }
 
-double fractionary_exponent(double base, double valor)
+double fractionary_exponent(double base, double value)
 {
     
   int i = 2;
@@ -46,17 +46,17 @@ double fractionary_exponent(double base, double valor)
     
   while(fmod(j, 10) != 0)
   {
-    j = valor * i;
+    j = value * i;
     if(fmod(j,10) != 0)
     {
       i++;
     }
   }  
-    return xnay(i, (j/i)*(log(base)/log(i)));
+  return xnay(i, (j/i)*(log(base)/log(i)));
 }
 
 bool isint(double x)
 {
     int trunked = (int)x;
     return (x == trunked);
-    }
+}
