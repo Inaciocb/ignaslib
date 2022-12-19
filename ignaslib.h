@@ -8,9 +8,12 @@
 #include <time.h>
 #include <string.h>
 
-bool isint(double);
-int xdigit(int, int);
+void BACKGROUND_COLOUR(int, int, int);
 
-void randvec(int, int, double);
+void NORMAL_COLOUR(void);
+
+void TEXT_COLOUR(int, int, int);
+
+int xdigit(long long int, int);
 
 #endif
